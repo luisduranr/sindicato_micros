@@ -3,7 +3,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -13,7 +12,7 @@ datasource db {
 
 
 model Chofer {
-  id        String    @id
+  id        String    @id @default(uuid())
   nombre    String
   apellido  String
   ci        String   @unique
