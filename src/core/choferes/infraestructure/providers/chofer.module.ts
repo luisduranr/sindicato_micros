@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ChoferController } from '../controllers/chofer.controller';
+import { ChoferController } from '../../interfaces/controllers/chofer.controller';
 import { RegistrarChoferUseCase } from 'src/core/choferes/aplication/use-cases/registrar-chofer.use-case';
 import { ChoferPrismaRepository } from '../persistence/chofer.prisma.repository';
 import { ChoferRepository } from '../../domain/repositories/chofer.repository';
