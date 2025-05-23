@@ -1,7 +1,6 @@
-/* eslint-disable */
 import { Injectable } from '@nestjs/common';
-import { ChoferRepository } from '../../domain/repositories/chofer.repository';
-import { Chofer } from '../../domain/entities/chofer.entity';
+import { ChoferRepository } from 'src/core/registro_afiliado/domain/repositories/choferes/chofer.repository';
+import { Chofer } from 'src/core/registro_afiliado/domain/entities/choferes/chofer.entity';
 import { PrismaService } from 'src/core/shared/prisma.service';
 
 @Injectable()

@@ -7,12 +7,12 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { RegistrarChoferDto } from 'src/core/choferes/aplication/dto/registrar-chofer.dto';
-import { RegistrarChoferUseCase } from 'src/core/choferes/aplication/use-cases/registrar-chofer.use-case';
-import { VerChoferUseCase } from '../../aplication/use-cases/ver-chofer.use-case';
-import { VerTodosChoferesUseCase } from '../../aplication/use-cases/ver-todos-choferes.use-case';
-import { EditarChoferUseCase } from '../../aplication/use-cases/editar-chofer.use-case';
-import { BorrarChoferUseCase } from '../../aplication/use-cases/borrar-chofer.use-case';
+import { RegistrarChoferDto } from 'src/core/registro_afiliado/aplication/dtos/choferes/registrar-chofer.dto';
+import { RegistrarChoferUseCase } from '../../aplication/use-cases/choferes/registrar-chofer.use-case';
+import { VerChoferUseCase } from 'src/core/registro_afiliado/aplication/use-cases/choferes/ver-chofer.use-case';
+import { VerTodosChoferesUseCase } from '../../aplication/use-cases/choferes/ver-todos-choferes.use-case';
+import { EditarChoferUseCase } from '../../aplication/use-cases/choferes/editar-chofer.use-case';
+import { BorrarChoferUseCase } from '../../aplication/use-cases/choferes/borrar-chofer.use-case';
 
 @Controller('choferes')
 export class ChoferController {

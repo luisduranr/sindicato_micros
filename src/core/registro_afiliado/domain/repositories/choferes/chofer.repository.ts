@@ -1,4 +1,4 @@
-import { Chofer } from '../entities/chofer.entity';
+import { Chofer } from '../../entities/choferes/chofer.entity';
 
 export abstract class ChoferRepository {
   abstract guardar(chofer: Chofer): Promise<void>;
