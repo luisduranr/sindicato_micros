@@ -19,4 +19,19 @@ model Chofer {
   telefono  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  buses     Vehiculo[]
+}
+model Vehiculo {
+  id        String    @id @default(uuid())
+  marca     String
+  modelo    String
+  anio      Int
+  placa     String    @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  choferId  String
+  chofer    Chofer    @relation(fields: [choferId], references: [id], onDelete: Cascade)
+
+  @@index([choferId])
 }

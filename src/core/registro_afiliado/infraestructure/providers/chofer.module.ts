@@ -22,5 +22,6 @@ import { EditarChoferUseCase } from '../../aplication/use-cases/choferes/editar-
       useClass: ChoferPrismaRepository,
     },
   ],
+  exports: [ChoferRepository],
 })
 export class ChoferModule {}
