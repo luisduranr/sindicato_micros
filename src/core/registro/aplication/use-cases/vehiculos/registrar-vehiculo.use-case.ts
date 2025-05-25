@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { ChoferRepository } from 'src/core/registro_afiliado/domain/repositories/choferes/chofer.repository';
-import { VehiculoRepository } from 'src/core/registro_afiliado/domain/repositories/vehiculo/vehiculo.repository';
+import { ChoferRepository } from 'src/core/registro/domain/repositories/choferes/chofer.repository';
+import { VehiculoRepository } from 'src/core/registro/domain/repositories/vehiculo/vehiculo.repository';
 import { RegistrarVehiculoDto } from '../../dtos/vehiculos/registrar-vehiculo.dto';
-import { Vehiculo } from 'src/core/registro_afiliado/domain/entities/vehiculo/vehiculo.entity';
+import { Vehiculo } from 'src/core/registro/domain/entities/vehiculo/vehiculo.entity';
 
 @Injectable()
 export class RegistrarVehiculoUseCase {

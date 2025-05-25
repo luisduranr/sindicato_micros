@@ -7,9 +7,9 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { RegistrarChoferDto } from 'src/core/registro_afiliado/aplication/dtos/choferes/registrar-chofer.dto';
+import { RegistrarChoferDto } from 'src/core/registro/aplication/dtos/choferes/registrar-chofer.dto';
 import { RegistrarChoferUseCase } from '../../aplication/use-cases/choferes/registrar-chofer.use-case';
-import { VerChoferUseCase } from 'src/core/registro_afiliado/aplication/use-cases/choferes/ver-chofer.use-case';
+import { VerChoferUseCase } from 'src/core/registro/aplication/use-cases/choferes/ver-chofer.use-case';
 import { VerTodosChoferesUseCase } from '../../aplication/use-cases/choferes/ver-todos-choferes.use-case';
 import { EditarChoferUseCase } from '../../aplication/use-cases/choferes/editar-chofer.use-case';
 import { BorrarChoferUseCase } from '../../aplication/use-cases/choferes/borrar-chofer.use-case';

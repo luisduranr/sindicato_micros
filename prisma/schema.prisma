@@ -35,3 +35,25 @@ model Vehiculo {
 
   @@index([choferId])
 }
+
+model CatalogoCargo {
+  id        String    @id @default(uuid())
+  nombre    String
+  descripcion String
+  Escala    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  empleados Empleado[]
+}
+model Empleado {
+  id        String    @id @default(uuid())
+  nombre    String
+  apellido  String
+  ci        String   @unique
+  telefono  String
+  cargoId   String
+  cargo     CatalogoCargo @relation(fields: [cargoId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { VehiculoRepository } from 'src/core/registro_afiliado/domain/repositories/vehiculo/vehiculo.repository';
+import { VehiculoRepository } from 'src/core/registro/domain/repositories/vehiculo/vehiculo.repository';
 
 @Injectable()
 export class BorrarVehiculoUseCase {

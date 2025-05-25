@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { VehiculoRepository } from 'src/core/registro_afiliado/domain/repositories/vehiculo/vehiculo.repository';
+import { VehiculoRepository } from 'src/core/registro/domain/repositories/vehiculo/vehiculo.repository';
 
-import { Vehiculo } from 'src/core/registro_afiliado/domain/entities/vehiculo/vehiculo.entity';
+import { Vehiculo } from 'src/core/registro/domain/entities/vehiculo/vehiculo.entity';
 
 @Injectable()
 export class VerTodosVehiculoUseCase {

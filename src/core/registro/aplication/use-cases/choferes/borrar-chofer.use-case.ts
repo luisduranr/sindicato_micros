@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ChoferRepository } from 'src/core/registro_afiliado/domain/repositories/choferes/chofer.repository';
+import { ChoferRepository } from 'src/core/registro/domain/repositories/choferes/chofer.repository';
 
 @Injectable()
 export class BorrarChoferUseCase {

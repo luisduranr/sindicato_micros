@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { ChoferRepository } from 'src/core/registro_afiliado/domain/repositories/choferes/chofer.repository';
-import { RegistrarChoferDto } from 'src/core/registro_afiliado/aplication/dtos/choferes/registrar-chofer.dto';
-import { Chofer } from 'src/core/registro_afiliado/domain/entities/choferes/chofer.entity';
+import { ChoferRepository } from 'src/core/registro/domain/repositories/choferes/chofer.repository';
+import { RegistrarChoferDto } from 'src/core/registro/aplication/dtos/choferes/registrar-chofer.dto';
+import { Chofer } from 'src/core/registro/domain/entities/choferes/chofer.entity';
 
 @Injectable()
 export class EditarChoferUseCase {
